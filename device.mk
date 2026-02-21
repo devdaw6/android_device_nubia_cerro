@@ -20,5 +20,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     SettingsProviderResCerro
 
+# Optional packages
+$(call inherit-product, device/nubia/cerro/optional/viperfx.mk)
+
 # Inherit from proprietary targets
 $(call inherit-product, vendor/nubia/cerro/cerro-vendor.mk)
